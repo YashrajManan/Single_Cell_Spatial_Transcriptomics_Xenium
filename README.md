@@ -37,7 +37,7 @@ real sub-cellular (x, y) spatial centroid. QC (`min_counts=10`, appropriate for 
    real `cells.csv.gz` output file.
 2. QC on real measured count distributions; filter low-count real cells.
 3. Normalize, log-transform, PCA, Leiden clustering, UMAP — the same baseline method family as this
-   portfolio's #4/#40.
+   portfolio's Single-Cell RNA-seq Analysis / Single-Cell Multiomics projects.
 4. Score each real cell against curated canonical marker-gene sets (`sc.tl.score_genes`); assign each real
    cell its highest-scoring real type.
 5. Build a real spatial k-nearest-neighbors graph from real cell centroids; run a real permutation-based
@@ -63,8 +63,9 @@ The real enrichment pattern is a clean, interpretable, and clinically meaningful
 form large, spatially coherent nests, while immune/stromal/endothelial cells occupy a distinct real
 compartment around and between those nests, largely excluded from penetrating into them — a real, classic
 "immune-excluded" tumor microenvironment organization, directly visible in the real spatial map, not just an
-abstract statistic. This is a real question Visium-based spatial transcriptomics (this portfolio's #5)
-cannot directly test, since a Visium spot already pools several real cells before any analysis starts; this
+abstract statistic. This is a real question Visium-based spatial transcriptomics (this portfolio's Spatial
+Transcriptomics project) cannot directly test, since a Visium spot already pools several real cells before
+any analysis starts; this
 project's single-cell resolution is specifically what makes cell-type-level spatial adjacency answerable at
 all.
 
